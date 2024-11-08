@@ -15,6 +15,10 @@ closeBtn.addEventListener('click', () => {
   toggleHidden();
 });
 
+overlay.addEventListener('click', () => {
+  toggleHidden();
+});
+
 document.addEventListener('keydown', e => {
   if (e.keyCode == 27 && !modal.classList.contains('hidden')) {
     toggleHidden();
